@@ -17,6 +17,7 @@
 		18A91B242024058D00FC7CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A91B222024058D00FC7CD3 /* LaunchScreen.storyboard */; };
 		18A91B2C2024071600FC7CD3 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */; };
 		18A91B2E2024073700FC7CD3 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */; };
+		52FE21D320259D5800921D8F /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE21D220259D5800921D8F /* CreateEventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		18A91B252024058D00FC7CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		52FE21D220259D5800921D8F /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */,
 				18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */,
 				182B70862024510A00D8CE8D /* AddSport.swift */,
+				52FE21D220259D5800921D8F /* CreateEventViewController.swift */,
 				1834559D2024E4D400AEE3EB /* MainViewController.swift */,
 				1829C1FA20255B6800E08FF1 /* SportCell.swift */,
 			);
@@ -158,6 +161,7 @@
 				1834559E2024E4D400AEE3EB /* MainViewController.swift in Sources */,
 				18A91B1A2024058D00FC7CD3 /* AppDelegate.swift in Sources */,
 				18A91B2E2024073700FC7CD3 /* Tab2ViewController.swift in Sources */,
+				52FE21D320259D5800921D8F /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

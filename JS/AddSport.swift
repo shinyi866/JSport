@@ -8,16 +8,16 @@
 
 import UIKit
 
+let KEY_LOCATION = "Location"
+let KEY_TIME = "Time"
+
 class AddSport: UIViewController {
     
     var myUserDefaults : UserDefaults!
     
-    
-    
     @IBOutlet var locationField: UITextField!
     @IBOutlet var timeField: UITextField!
     @IBOutlet var kindField: UITextField!
-    @IBOutlet var NumberField: UITextField!
     
     @IBOutlet var loc: UILabel!
     @IBOutlet var time: UILabel!
@@ -25,11 +25,18 @@ class AddSport: UIViewController {
     @IBOutlet var num: UILabel!
     
     @IBAction func btnSend(_ sender: Any) {
-        UserDefaults.standard.set(locationField.text, forKey: "Locatin")
+        UserDefaults.standard.set(locationField.text, forKey: KEY_LOCATION)
         locationField.text = ""
         
-        if let outputloc = UserDefaults.standard.object(forKey:"Locatin") as? String{
+        if let outputloc = UserDefaults.standard.object(forKey:KEY_LOCATION) as? String{
             loc.text = outputloc
+        }
+        
+        UserDefaults.standard.set(timeField.text, forKey: KEY_TIME)
+        timeField.text = ""
+        
+        if let outputtime = UserDefaults.standard.object(forKey:KEY_TIME) as? String{
+            time.text = outputtime
         }
         
     }
@@ -37,8 +44,12 @@ class AddSport: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let outputloc = UserDefaults.standard.object(forKey:"Locatin") as? String{
+        if let outputloc = UserDefaults.standard.object(forKey:KEY_LOCATION) as? String{
             loc.text = outputloc
+        }
+        
+        if let outputtime = UserDefaults.standard.object(forKey:KEY_LOCATION) as? String{
+            time.text = outputtime
         }
         // Do any additional setup after loading the view.
     }

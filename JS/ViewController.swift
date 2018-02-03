@@ -13,13 +13,13 @@ class ViewController: UIViewController , UIPageViewControllerDataSource , UIPage
 
     
     
-    @IBOutlet var input: UITextField!
-    @IBOutlet var table: UITableView!
-    @IBAction func putAction(_ sender: Any) {
-//        data.append(inputField.text!)
-        data.insert(input.text!, at: 0)
-        table.reloadData()
-    }
+//    @IBOutlet var input: UITextField!
+//    @IBOutlet var table: UITableView!
+//    @IBAction func putAction(_ sender: Any) {
+////        data.append(inputField.text!)
+//        data.insert(input.text!, at: 0)
+//        table.reloadData()
+//    }
     
     
     @IBOutlet var btnTab1: UIButton!

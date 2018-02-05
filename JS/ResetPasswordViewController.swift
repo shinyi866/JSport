@@ -51,9 +51,12 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
         return (true)
     }
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //placeholder
+        emailTextField.textAlignment = .center
+        emailTextField.placeholder = "電子信箱"
         
         //hide keyboard
         self.emailTextField.delegate = self

@@ -48,6 +48,9 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFie
             print(error)
             return
         }
+        /////////?????why it doesn't work?
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "YoVC")
+        self.present(vc!, animated: true, completion: nil)
         print("Successfully loged in")
     }
     
@@ -70,7 +73,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFie
         
         //account
         emailTextField.textAlignment = .center
-        emailTextField.placeholder = "手機/電子信箱"
+        emailTextField.placeholder = "電子信箱"
 //        emailTextField.background=[UIImage imageNamed:@#imageLiteral(resourceName: "textbar.png")"textbar.png"]
         
         //password

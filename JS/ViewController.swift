@@ -105,7 +105,7 @@ class ViewController: UIViewController , UIPageViewControllerDataSource , UIPage
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            self.pageController.view.frame = CGRect(x: 0, y: 65, width: self.view.frame.size.width, height: self.view.frame.size.height-65)
+            self.pageController.view.frame = CGRect(x: 0, y:75, width: self.view.frame.size.width, height: self.view.frame.size.height-65)
         }
         
         let homeStoryboard = UIStoryboard(name: "Main", bundle: nil)

@@ -10,6 +10,7 @@
 		1829C1FB20255B6800E08FF1 /* SportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829C1FA20255B6800E08FF1 /* SportCell.swift */; };
 		182B70872024510A00D8CE8D /* AddSport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B70862024510A00D8CE8D /* AddSport.swift */; };
 		1834559E2024E4D400AEE3EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834559D2024E4D400AEE3EB /* MainViewController.swift */; };
+		183E1F6F2025A06500BE1B76 /* SportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E1F6E2025A06500BE1B76 /* SportData.swift */; };
 		18A91B1A2024058D00FC7CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B192024058D00FC7CD3 /* AppDelegate.swift */; };
 		18A91B1C2024058D00FC7CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B1B2024058D00FC7CD3 /* ViewController.swift */; };
 		18A91B1F2024058D00FC7CD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A91B1D2024058D00FC7CD3 /* Main.storyboard */; };
@@ -17,12 +18,14 @@
 		18A91B242024058D00FC7CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A91B222024058D00FC7CD3 /* LaunchScreen.storyboard */; };
 		18A91B2C2024071600FC7CD3 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */; };
 		18A91B2E2024073700FC7CD3 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */; };
+		18CB3B0A2027506100F7BF94 /* AddSport1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3B092027506100F7BF94 /* AddSport1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1829C1FA20255B6800E08FF1 /* SportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCell.swift; sourceTree = "<group>"; };
 		182B70862024510A00D8CE8D /* AddSport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSport.swift; sourceTree = "<group>"; };
 		1834559D2024E4D400AEE3EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		183E1F6E2025A06500BE1B76 /* SportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportData.swift; sourceTree = "<group>"; };
 		18A91B162024058D00FC7CD3 /* JS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A91B192024058D00FC7CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A91B1B2024058D00FC7CD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		18A91B252024058D00FC7CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		18CB3B092027506100F7BF94 /* AddSport1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSport1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				182B70862024510A00D8CE8D /* AddSport.swift */,
 				1834559D2024E4D400AEE3EB /* MainViewController.swift */,
 				1829C1FA20255B6800E08FF1 /* SportCell.swift */,
+				183E1F6E2025A06500BE1B76 /* SportData.swift */,
+				18CB3B092027506100F7BF94 /* AddSport1.swift */,
 			);
 			path = JS;
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 				18A91B2C2024071600FC7CD3 /* Tab1ViewController.swift in Sources */,
 				1829C1FB20255B6800E08FF1 /* SportCell.swift in Sources */,
 				18A91B1C2024058D00FC7CD3 /* ViewController.swift in Sources */,
+				18CB3B0A2027506100F7BF94 /* AddSport1.swift in Sources */,
+				183E1F6F2025A06500BE1B76 /* SportData.swift in Sources */,
 				1834559E2024E4D400AEE3EB /* MainViewController.swift in Sources */,
 				18A91B1A2024058D00FC7CD3 /* AppDelegate.swift in Sources */,
 				18A91B2E2024073700FC7CD3 /* Tab2ViewController.swift in Sources */,

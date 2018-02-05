@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -314,10 +314,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Z2y-98-bOa"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ygN-j0-dJB"/>
-                    <connections>
-                        <outlet property="LGCell" destination="HlD-RO-Jwt" id="fKd-GP-MAu"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="AddSport" image="tb_on_add.png" id="ygN-j0-dJB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGo-Yj-O2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -456,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYI-zQ-ADi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4612" y="-267"/>
+            <point key="canvasLocation" x="-4039.1999999999998" y="97.601199400299862"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="fIO-py-2cl">
@@ -543,7 +540,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEd-AP-TRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3892" y="-269"/>
+            <point key="canvasLocation" x="-3263.1999999999998" y="98.50074962518741"/>
         </scene>
         <!--Reset Password View Controller-->
         <scene sceneID="gHr-Tt-MQZ">
@@ -585,7 +582,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFp-cI-Mr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3215" y="-270"/>
+            <point key="canvasLocation" x="-2545" y="105"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="J9m-ZC-agJ">
@@ -617,7 +614,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i3e-sZ-aAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2519" y="-270"/>
+            <point key="canvasLocation" x="-1810" y="-699"/>
         </scene>
         <!--Activity-->
         <scene sceneID="LKD-p5-ASC">
@@ -633,7 +630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9mQ-3E-eiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-850" y="-732"/>
+            <point key="canvasLocation" x="-790" y="126"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d6f-Gc-hi7">

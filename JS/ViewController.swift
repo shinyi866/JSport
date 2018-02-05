@@ -9,6 +9,7 @@
 import UIKit
 
 
+
 class ViewController: UIViewController , UIPageViewControllerDataSource , UIPageViewControllerDelegate , UIScrollViewDelegate , UITableViewDataSource , UITableViewDelegate{
     
 //    @IBOutlet var input: UITextField!
@@ -20,11 +21,15 @@ class ViewController: UIViewController , UIPageViewControllerDataSource , UIPage
 //    }
     
     
+
+    @IBOutlet weak var userMail: UILabel!
     @IBOutlet var btnTab1: UIButton!
     @IBOutlet var btnTab2: UIButton!
     
     @IBOutlet var viewLine: UIView!
     @IBOutlet private weak var constantViewLeft: NSLayoutConstraint!
+    
+    
     
     var tab1VC:Tab1ViewController! = nil
     var tab2VC:Tab2ViewController! = nil
@@ -50,6 +55,9 @@ class ViewController: UIViewController , UIPageViewControllerDataSource , UIPage
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //logout
         super.viewDidLoad()
         
         currentPage = 0
@@ -208,4 +216,24 @@ class ViewController: UIViewController , UIPageViewControllerDataSource , UIPage
     }
     
 }
+
+//
+//  YoController.swift
+//  Login
+//
+//  Created by 郭 芷瑄 on 2018/1/31.
+//  Copyright © 2018年 郭 芷瑄. All rights reserved.
+//
+
+
+
+
+
+
+
+
+    
+
+
+
 

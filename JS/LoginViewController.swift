@@ -18,7 +18,6 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFie
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBAction func loginAction(_ sender: Any) {
-        
         if self.emailTextField.text == "" || self.passwordTextField.text == ""{
             let alertController = UIAlertController(title : "Error", message : "Please enter your email and password", preferredStyle : .alert)
             let defaultAction = UIAlertAction(title : "OK",  style : .cancel, handler: nil)
@@ -38,8 +37,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFie
                 }
             }
         }
-        
     }
+
     func loginButtonDidLogOut(_ loginButton : FBSDKLoginButton!){
         print("Did log out of FB")
     }
@@ -67,13 +66,18 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         //account
         emailTextField.textAlignment = .center
         emailTextField.placeholder = "手機/電子信箱"
+//        emailTextField.background=[UIImage imageNamed:@#imageLiteral(resourceName: "textbar.png")"textbar.png"]
         
         //password
         passwordTextField.textAlignment = .center
         passwordTextField.placeholder = "密碼"
+//        passwordTextField.background=[UIImage imageNamed:
+//            @#imageLiteral(resourceName: "textbar.png")"textbar.png"]
         
         //hide keyboard
         self.passwordTextField.delegate = self

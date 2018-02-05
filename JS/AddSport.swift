@@ -12,6 +12,7 @@ import MapKit
 
 class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,CLLocationManagerDelegate{
     
+    
     let locationManger = CLLocationManager()
     var currentloc = Location()
     var countdis:Int = 0
@@ -22,12 +23,15 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
    
     @IBOutlet var map: MKMapView!
     
+    @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet var imageview: UIImageView!
     @IBOutlet var locationField: UITextField!
     @IBOutlet var timeField: UITextField!
     @IBOutlet var kindField: UITextField!
     @IBOutlet var distant: UITextField!
     @IBOutlet var distantshow: UILabel!
+    
+    let picker = UIDatePicker()
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         //info: [String : AnyObject]//傳送者傳遞的資料放這裡
@@ -111,6 +115,14 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //date
+        createDatePicker()
+        timeField.textAlignment = .center
+        timeField.placeholder = "請選擇時間"
+        
+        descriptionTextField.textAlignment = .center
+        descriptionTextField.placeholder = "輸入更詳細的邀約內容（例如：人數、場地、詳細狀況等）"
+        
         //位置請求
         locationManger.requestWhenInUseAuthorization()
         
@@ -129,10 +141,10 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -141,6 +153,35 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         }
     }
     
+    //date
+    func createDatePicker(){
+        //toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        //done button
+        let done = UIBarButtonItem(barButtonSystemItem: .done, target:nil, action:#selector(donePressed))
+        toolbar.setItems([done], animated: false)
+        timeField.inputAccessoryView = toolbar
+        
+        //picker
+        timeField.inputView = picker
+        
+        //format picker
+        picker.datePickerMode = .date
+    }
     
-
+    //date
+    @objc func donePressed(){
+        //format date
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        let dateString = formatter.string(from: picker.date)
+        
+        //display
+        timeField.text = "\(dateString)"
+        //picker.date
+        self.view.endEditing(true)
+    }
 }

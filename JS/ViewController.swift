@@ -10,8 +10,6 @@ import UIKit
 
 
 class ViewController: UIViewController , UIPageViewControllerDataSource , UIPageViewControllerDelegate , UIScrollViewDelegate , UITableViewDataSource , UITableViewDelegate{
-
-    
     
 //    @IBOutlet var input: UITextField!
 //    @IBOutlet var table: UITableView!
@@ -56,6 +54,7 @@ class ViewController: UIViewController , UIPageViewControllerDataSource , UIPage
         
         currentPage = 0
         createPageViewController()
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12D5271B274A3BA997CEF013 /* Pods-JS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JS/Pods-JS.release.xcconfig"; sourceTree = "<group>"; };
 		1829C1FA20255B6800E08FF1 /* SportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCell.swift; sourceTree = "<group>"; };
 		182B70862024510A00D8CE8D /* AddSport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSport.swift; sourceTree = "<group>"; };
 		1834559D2024E4D400AEE3EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +44,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A64C4F773410CE01325B5A /* Pods_JS.framework in Frameworks */,
+				52FE21ED2026DF4A00921D8F /* FBSDKCoreKit.framework in Frameworks */,
+				52FE21EF2026DF5B00921D8F /* FBSDKLoginKit.framework in Frameworks */,
+				52FE21EB2026DF2B00921D8F /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				18A91B182024058D00FC7CD3 /* JS */,
 				18A91B172024058D00FC7CD3 /* Products */,
+				C19269EB29CE0A14270FA779 /* Pods */,
+				46968304AAF5671C48E4E925 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,18 +78,39 @@
 				18A91B192024058D00FC7CD3 /* AppDelegate.swift */,
 				18A91B1B2024058D00FC7CD3 /* ViewController.swift */,
 				18A91B1D2024058D00FC7CD3 /* Main.storyboard */,
+				52FE21F02026FEE100921D8F /* ResetPasswordViewController.swift */,
+				52FE21E62026D8B800921D8F /* LoginViewController.swift */,
+				52FE21E82026DBB100921D8F /* CreateAccountViewController.swift */,
 				18A91B202024058D00FC7CD3 /* Assets.xcassets */,
 				18A91B222024058D00FC7CD3 /* LaunchScreen.storyboard */,
 				18A91B252024058D00FC7CD3 /* Info.plist */,
 				18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */,
 				18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */,
 				182B70862024510A00D8CE8D /* AddSport.swift */,
+				52FE21D220259D5800921D8F /* CreateEventViewController.swift */,
 				1834559D2024E4D400AEE3EB /* MainViewController.swift */,
 				1829C1FA20255B6800E08FF1 /* SportCell.swift */,
 				183E1F6E2025A06500BE1B76 /* SportData.swift */,
 				18CB3B092027506100F7BF94 /* AddSport1.swift */,
 			);
 			path = JS;
+			sourceTree = "<group>";
+		};
+		46968304AAF5671C48E4E925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F82E5C25CDC7F924D16A3436 /* Pods_JS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C19269EB29CE0A14270FA779 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2EF9F149A86813A1CEB142D /* Pods-JS.debug.xcconfig */,
+				12D5271B274A3BA997CEF013 /* Pods-JS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18A91B282024058D00FC7CD3 /* Build configuration list for PBXNativeTarget "JS" */;
 			buildPhases = (
+				44362AC1544762C415EDA576 /* [CP] Check Pods Manifest.lock */,
 				18A91B122024058D00FC7CD3 /* Sources */,
 				18A91B132024058D00FC7CD3 /* Frameworks */,
 				18A91B142024058D00FC7CD3 /* Resources */,
+				8C127176976F7FBA8D6048E8 /* [CP] Embed Pods Frameworks */,
+				84FBA16E68AFEFB8A21A2095 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,12 +176,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A91B242024058D00FC7CD3 /* LaunchScreen.storyboard in Resources */,
+				52FE21E52026C35A00921D8F /* GoogleService-Info.plist in Resources */,
 				18A91B212024058D00FC7CD3 /* Assets.xcassets in Resources */,
+				52FE21E02026B40200921D8F /* testImag1.png in Resources */,
 				18A91B1F2024058D00FC7CD3 /* Main.storyboard in Resources */,
+				52FE21E12026B40200921D8F /* testImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44362AC1544762C415EDA576 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84FBA16E68AFEFB8A21A2095 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JS/Pods-JS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C127176976F7FBA8D6048E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JS/Pods-JS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JS/Pods-JS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18A91B122024058D00FC7CD3 /* Sources */ = {
@@ -158,7 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				182B70872024510A00D8CE8D /* AddSport.swift in Sources */,
+				52FE21D52025B3FC00921D8F /* MultipleSelectViewController.swift in Sources */,
 				18A91B2C2024071600FC7CD3 /* Tab1ViewController.swift in Sources */,
+				52FE21F12026FEE100921D8F /* ResetPasswordViewController.swift in Sources */,
+				52FE21E92026DBB100921D8F /* CreateAccountViewController.swift in Sources */,
 				1829C1FB20255B6800E08FF1 /* SportCell.swift in Sources */,
 				18A91B1C2024058D00FC7CD3 /* ViewController.swift in Sources */,
 				18CB3B0A2027506100F7BF94 /* AddSport1.swift in Sources */,
@@ -166,6 +271,8 @@
 				1834559E2024E4D400AEE3EB /* MainViewController.swift in Sources */,
 				18A91B1A2024058D00FC7CD3 /* AppDelegate.swift in Sources */,
 				18A91B2E2024073700FC7CD3 /* Tab2ViewController.swift in Sources */,
+				52FE21E72026D8B800921D8F /* LoginViewController.swift in Sources */,
+				52FE21D320259D5800921D8F /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,9 +407,15 @@
 		};
 		18A91B292024058D00FC7CD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2EF9F149A86813A1CEB142D /* Pods-JS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H7Z24DFP3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JS",
+				);
 				INFOPLIST_FILE = JS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apple.JS;
@@ -314,9 +427,15 @@
 		};
 		18A91B2A2024058D00FC7CD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12D5271B274A3BA997CEF013 /* Pods-JS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H7Z24DFP3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JS",
+				);
 				INFOPLIST_FILE = JS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apple.JS;

@@ -10,17 +10,20 @@ import Foundation
 import UIKit
 
 class SportData {
-
+    
     var location: String
     var time: String
+    var status: String
     var dis: Int
     var pic: UIImage
     
-    init(location: String , time: String , dis:Int, pic: UIImage ){
+    
+    init(location: String , time: String , dis:Int, pic: UIImage,status:String){
         self.location = location
         self.time = time
         self.dis = dis
         self.pic = pic
+        self.status = status
     }
     
 }

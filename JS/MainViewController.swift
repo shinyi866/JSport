@@ -14,9 +14,9 @@ class MainViewController: UIViewController , UITableViewDataSource , UITableView
 //    var timedata:[String] = []
     
     
-    @IBOutlet var loctext: UITextField!
-    @IBOutlet var timetext: UITextField!
-    @IBOutlet var numbertext: UITextField!
+//    @IBOutlet var loctext: UITextField!
+//    @IBOutlet var timetext: UITextField!
+//    @IBOutlet var numbertext: UITextField!
     
     @IBOutlet var tableview: UITableView!
     

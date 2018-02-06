@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseAuth
-import FirebaseDatabase
+//import Firebase
+//import FirebaseAuth
+//import FirebaseDatabase
 
 
 class ViewController: UIViewController , UIPageViewControllerDataSource , UIPageViewControllerDelegate , UIScrollViewDelegate , UITableViewDataSource , UITableViewDelegate{
@@ -29,17 +29,17 @@ class ViewController: UIViewController , UIPageViewControllerDataSource , UIPage
     @IBOutlet var viewLine: UIView!
     @IBOutlet private weak var constantViewLeft: NSLayoutConstraint!
     
-    @IBOutlet weak var userMail: UILabel!
-    @IBAction func logout(_ sender: Any) {
-        if Auth.auth().currentUser != nil{
-            do{
-                try Auth.auth().signOut()
-                dismiss(animated: true, completion: nil)
-            } catch let error as NSError{
-                print(error.localizedDescription)
-            }
-        }
-    }
+//    @IBOutlet weak var userMail: UILabel!
+//    @IBAction func logout(_ sender: Any) {
+//        if Auth.auth().currentUser != nil{
+//            do{
+//                try Auth.auth().signOut()
+//                dismiss(animated: true, completion: nil)
+//            } catch let error as NSError{
+//                print(error.localizedDescription)
+//            }
+//        }
+//    }
     
     
     var tab1VC:Tab1ViewController! = nil
@@ -68,8 +68,8 @@ class ViewController: UIViewController , UIPageViewControllerDataSource , UIPage
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //logout
-        userMail.text = Auth.auth().currentUser?.email
+//        //logout
+//        userMail.text = Auth.auth().currentUser?.email
         
         currentPage = 0
         createPageViewController()

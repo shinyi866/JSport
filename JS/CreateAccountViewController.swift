@@ -55,11 +55,13 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         //account
         emailTextField.textAlignment = .center
-        emailTextField.placeholder = "手機/電子信箱"
+        emailTextField.placeholder = "電子信箱"
+        emailTextField.setValue(UIColor.black, forKeyPath: "_placeholderLabel.textColor")
         
         //password
         passwordTextField.textAlignment = .center
         passwordTextField.placeholder = "密碼"
+        passwordTextField.setValue(UIColor.black, forKeyPath: "_placeholderLabel.textColor")
         
         //hide keyboard
         self.passwordTextField.delegate = self

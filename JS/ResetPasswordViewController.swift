@@ -57,6 +57,7 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
         //placeholder
         emailTextField.textAlignment = .center
         emailTextField.placeholder = "電子信箱"
+        emailTextField.setValue(UIColor.black, forKeyPath: "_placeholderLabel.textColor")
         
         //hide keyboard
         self.emailTextField.delegate = self

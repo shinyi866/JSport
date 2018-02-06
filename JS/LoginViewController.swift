@@ -13,7 +13,7 @@ import FBSDKLoginKit
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
     
-    @IBOutlet weak var facebookLogin: FBSDKLoginButton!
+//    @IBOutlet weak var facebookLogin: FBSDKLoginButton!
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -44,14 +44,15 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFie
     }
     
     func loginButton(_ loginButton : FBSDKLoginButton!, didCompleteWith result : FBSDKLoginManagerLoginResult!, error : Error!){
+        
         if error != nil{
             print(error)
             return
         }
-        /////////?????why it doesn't work?
+        print("Successfully logged in")
+        ///
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "YoVC")
         self.present(vc!, animated: true, completion: nil)
-        print("Successfully loged in")
     }
     
     //hide keyboard when user touches outside keyboard
@@ -70,28 +71,30 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFie
         super.viewDidLoad()
         
         
-        
         //account
         emailTextField.textAlignment = .center
         emailTextField.placeholder = "電子信箱"
+        emailTextField.setValue(UIColor.white, forKeyPath: "_placeholderLabel.textColor")
 //        emailTextField.background=[UIImage imageNamed:@#imageLiteral(resourceName: "textbar.png")"textbar.png"]
         
         //password
         passwordTextField.textAlignment = .center
         passwordTextField.placeholder = "密碼"
-//        passwordTextField.background=[UIImage imageNamed:
-//            @#imageLiteral(resourceName: "textbar.png")"textbar.png"]
+        emailTextField.setValue(UIColor.white, forKeyPath: "_placeholderLabel.textColor")
+//        passwordTextField.background=[UIImage imageNamed:@#imageLiteral(resourceName: "textbar.png")"textbar.png"]
         
         //hide keyboard
         self.passwordTextField.delegate = self
         self.emailTextField.delegate = self
         
+        //facebook
         let loginButton = FBSDKLoginButton()
         view.addSubview(loginButton)
         loginButton.delegate = self
     }
         
 //        loginButton.frame = CGRect(x : , y : , height : ,width : )
+//            loginButton.frame = CGRect(x :16 , y :162 , height :50 ,width :view.frame.width - 32 )
     
 //        facebookLogin.readPermissions = ["public_profile", "email", "user_friends"]
 //        facebookLogin.delegate = self as! FBSDKLoginButtonDelegate
@@ -101,10 +104,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFie
 //            //            fetchProfile()
 //        }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
     
     
 }

@@ -13,7 +13,7 @@ class AddSport1: UIViewController , UICollectionViewDataSource , UICollectionVie
     @IBOutlet var LGCell: UICollectionView!
     
     var data:[[(String,Bool)]] = []
-    var images = ["btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02","btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02","btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02","btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02","btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02","btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02","btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02"]
+    var images = ["btn_3_off_01","btn_3_off_02","btn_3_off_03","btn_3_off_04","btn_3_off_05","btn_3_off_06","btn_3_on_02","btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02","btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02","btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02","btn_3_off_01","btn_3_on_01","btn_3_off_02","btn_3_on_02"]
     
     //    var data1:[(String,Bool)] = ["有球","有場地","有器材","有食物","有飲水機","有便利商店","有私人場地","有其他隊友","有急救包"].map({str in return (str,false)})
     var datatest:[String] = []

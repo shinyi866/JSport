@@ -18,11 +18,12 @@
 		18A91B242024058D00FC7CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A91B222024058D00FC7CD3 /* LaunchScreen.storyboard */; };
 		18A91B2C2024071600FC7CD3 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */; };
 		18A91B2E2024073700FC7CD3 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */; };
+		18C960352029BFEF00475058 /* MultipleSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C960342029BFEF00475058 /* MultipleSelect.storyboard */; };
+		18C960372029BFFC00475058 /* Notice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C960362029BFFB00475058 /* Notice.storyboard */; };
+		18C960392029CEC200475058 /* Sport1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C960382029CEC200475058 /* Sport1Cell.swift */; };
 		18CB3B0A2027506100F7BF94 /* AddSport1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3B092027506100F7BF94 /* AddSport1.swift */; };
 		521B908C2028637500EFFCBA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 521B908B2028637500EFFCBA /* logo.png */; };
 		52A77CE62029805F006D9BD2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A77CE52029805F006D9BD2 /* SettingViewController.swift */; };
-		52A77CE92029BA96006D9BD2 /* Notice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A77CE82029B94F006D9BD2 /* Notice.storyboard */; };
-		52A77CEA2029BA9A006D9BD2 /* MultipleSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A77CE72029AFB4006D9BD2 /* MultipleSelect.storyboard */; };
 		52FE21E52026C35A00921D8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21E42026C35A00921D8F /* GoogleService-Info.plist */; };
 		52FE21E72026D8B800921D8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE21E62026D8B800921D8F /* LoginViewController.swift */; };
 		52FE21E92026DBB100921D8F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE21E82026DBB100921D8F /* CreateAccountViewController.swift */; };
@@ -61,12 +62,13 @@
 		18A91B252024058D00FC7CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		18C960342029BFEF00475058 /* MultipleSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MultipleSelect.storyboard; sourceTree = "<group>"; };
+		18C960362029BFFB00475058 /* Notice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notice.storyboard; sourceTree = "<group>"; };
+		18C960382029CEC200475058 /* Sport1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport1Cell.swift; sourceTree = "<group>"; };
 		18CB3B092027506100F7BF94 /* AddSport1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSport1.swift; sourceTree = "<group>"; };
 		521B908B2028637500EFFCBA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		52A77CE420295A3D006D9BD2 /* JS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JS.entitlements; sourceTree = "<group>"; };
 		52A77CE52029805F006D9BD2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		52A77CE72029AFB4006D9BD2 /* MultipleSelect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MultipleSelect.storyboard; path = /Users/francescaeatonstuff/Documents/JSport/JS/MultipleSelect.storyboard; sourceTree = "<absolute>"; };
-		52A77CE82029B94F006D9BD2 /* Notice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Notice.storyboard; path = /Users/francescaeatonstuff/Documents/JSport/JS/Notice.storyboard; sourceTree = "<absolute>"; };
 		52FE21E42026C35A00921D8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52FE21E62026D8B800921D8F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		52FE21E82026DBB100921D8F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -127,8 +129,8 @@
 		18A91B182024058D00FC7CD3 /* JS */ = {
 			isa = PBXGroup;
 			children = (
-				52A77CE82029B94F006D9BD2 /* Notice.storyboard */,
-				52A77CE72029AFB4006D9BD2 /* MultipleSelect.storyboard */,
+				18C960362029BFFB00475058 /* Notice.storyboard */,
+				18C960342029BFEF00475058 /* MultipleSelect.storyboard */,
 				52A77CE420295A3D006D9BD2 /* JS.entitlements */,
 				18A91B192024058D00FC7CD3 /* AppDelegate.swift */,
 				18A91B1B2024058D00FC7CD3 /* ViewController.swift */,
@@ -143,10 +145,11 @@
 				18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */,
 				18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */,
 				182B70862024510A00D8CE8D /* AddSport.swift */,
+				18CB3B092027506100F7BF94 /* AddSport1.swift */,
+				18C960382029CEC200475058 /* Sport1Cell.swift */,
+				1829C1FA20255B6800E08FF1 /* SportCell.swift */,
 				1834559D2024E4D400AEE3EB /* MainViewController.swift */,
 				183E1F6E2025A06500BE1B76 /* SportData.swift */,
-				18CB3B092027506100F7BF94 /* AddSport1.swift */,
-				1829C1FA20255B6800E08FF1 /* SportCell.swift */,
 				52FE21E42026C35A00921D8F /* GoogleService-Info.plist */,
 				521B908B2028637500EFFCBA /* logo.png */,
 				52FE220C2028437A00921D8F /* btn_setting.png */,
@@ -253,10 +256,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52A77CEA2029BA9A006D9BD2 /* MultipleSelect.storyboard in Resources */,
+				18C960372029BFFC00475058 /* Notice.storyboard in Resources */,
 				52FE21F52028137E00921D8F /* pic.png in Resources */,
 				18A91B242024058D00FC7CD3 /* LaunchScreen.storyboard in Resources */,
-				52A77CE92029BA96006D9BD2 /* Notice.storyboard in Resources */,
+				18C960352029BFEF00475058 /* MultipleSelect.storyboard in Resources */,
 				521B908C2028637500EFFCBA /* logo.png in Resources */,
 				52FE220D2028437A00921D8F /* btn_setting.png in Resources */,
 				52FE21E52026C35A00921D8F /* GoogleService-Info.plist in Resources */,
@@ -351,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C960392029CEC200475058 /* Sport1Cell.swift in Sources */,
 				182B70872024510A00D8CE8D /* AddSport.swift in Sources */,
 				18A91B2C2024071600FC7CD3 /* Tab1ViewController.swift in Sources */,
 				52FE21F12026FEE100921D8F /* ResetPasswordViewController.swift in Sources */,

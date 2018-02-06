@@ -16,11 +16,12 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
     let locationManger = CLLocationManager()
     var currentloc = Location()
     var countdis:Int = 0
+    var receivestatus:[String] = []
     
     @IBAction func Back(segue: UIStoryboardSegue){
     }
     
-   
+    
     @IBOutlet var map: MKMapView!
     
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -38,20 +39,16 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         print("\(info)")
         let image = info["UIImagePickerControllerOriginalImage"]
         imageview.image = image as? UIImage
-//        var picdata:[UIImage] = []
-//        picdata.append(image as! UIImage)
+        //        var picdata:[UIImage] = []
+        //        picdata.append(image as! UIImage)
         dismiss(animated: true, completion: nil)
         
     }
-
+    
     @IBAction func mapAction(_ sender: Any) {
         
-        if map.isHidden == true{
-            map.isHidden = false
-        }
+        var coordinaiton:CLLocationCoordinate2D = map.userLocation.coordinate
         
-        var coordinaiton:CLLocationCoordinate2D = map.userLocation.coordinate//CLLocationCoordinate2DMake(25.0355353, 121.5135416) 
-        //Location of Exercise
         if locationField.text == "NTNU"{
             coordinaiton.latitude = currentloc.NTNU_lat
             coordinaiton.longitude = currentloc.NTNU_lng
@@ -73,6 +70,9 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
             coordinaiton.longitude = currentloc.UT_lng
             countdis = Int(CountDistance(lat: currentloc.UT_lat, lng: currentloc.UT_lng))
         }else{}
+        if map.isHidden == true{
+            map.isHidden = false
+        }
         
         let pointAnnotation = MKPointAnnotation()
         let mySpan = MKCoordinateSpanMake(0.02, 0.02)
@@ -98,18 +98,54 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
     }
     
     @IBAction func btnSend(_ sender: Any) {
-        
-        let sportdata = SportData(location:locationField.text! , time:timeField.text! , dis: countdis, pic:imageview.image!)
+        var statusdata:String = ""
+        for i in 0..<receivestatus.count{
+            statusdata.append(receivestatus[i])
+        }
+        let sportdata = SportData(location:locationField.text! , time:timeField.text! , dis: countdis, pic:imageview.image!, status:statusdata)
         //把值傳進SPORT_DATA
         SPORT_DATA.insert(sportdata, at: 0)
         SPORT_DATA.sort(by: { (dis1: SportData, dis2: SportData) -> Bool in return dis1.dis < dis2.dis })
         
+        //        let sportdata = SportData(location:locationField.text! , time:timeField.text! , dis: countdis, pic:imageview.image!)
+        //            //把值傳進SPORT_DATA
+        //        SPORT_DATA.insert(sportdata, at: 0)
+        //        SPORT_DATA.sort(by: { (dis1: SportData, dis2: SportData) -> Bool in return dis1.dis < dis2.dis })
         locationField.text = ""
         timeField.text = ""
         //imageview = nil
         distantshow.text = String(countdis)
         print(SPORT_DATA)
-
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        //座標
+        var coordinaiton:CLLocationCoordinate2D = map.userLocation.coordinate//CLLocationCoordinate2DMake(25.0355353, 121.5135416)
+        //Location of Exercise
+        if locationField.text == "NTNU"{
+            coordinaiton.latitude = currentloc.NTNU_lat
+            coordinaiton.longitude = currentloc.NTNU_lng
+            countdis = Int(CountDistance(lat: currentloc.NTNU_lat, lng: currentloc.NTNU_lng))
+        }else if locationField.text == "NTU"{
+            coordinaiton.latitude = currentloc.NTU_lat
+            coordinaiton.longitude = currentloc.NTU_lng
+            countdis = Int(CountDistance(lat: currentloc.NTU_lat, lng: currentloc.NTU_lng))
+        }else if locationField.text == "NTUT"{
+            coordinaiton.latitude = currentloc.NTUT_lat
+            coordinaiton.longitude = currentloc.NTUT_lng
+            countdis = Int(CountDistance(lat: currentloc.NTUT_lat, lng: currentloc.NTUT_lng))
+        }else if locationField.text == "NTUA"{
+            coordinaiton.latitude = currentloc.NTUA_lat
+            coordinaiton.longitude = currentloc.NTUA_lng
+            countdis = Int(CountDistance(lat: currentloc.NTUA_lat, lng: currentloc.NTUA_lng))
+        }else if locationField.text == "UT"{
+            coordinaiton.latitude = currentloc.UT_lat
+            coordinaiton.longitude = currentloc.UT_lng
+            countdis = Int(CountDistance(lat: currentloc.UT_lat, lng: currentloc.UT_lng))
+        }else{}
+        
     }
     
     override func viewDidLoad() {
@@ -140,11 +176,11 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
             map.isHidden = true
         }
     }
-
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
+    
+    //    override func didReceiveMemoryWarning() {
+    //        super.didReceiveMemoryWarning()
+    //        // Dispose of any resources that can be recreated.
+    //    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

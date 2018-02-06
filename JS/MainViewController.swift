@@ -37,7 +37,9 @@ class MainViewController: UIViewController , UITableViewDataSource , UITableView
         cell?.label1.text = SPORT_DATA[indexPath.row].location
         cell?.label2.text = SPORT_DATA[indexPath.row].time
         cell?.label3.text = String(SPORT_DATA[indexPath.row].dis)
+        cell?.label4.text = SPORT_DATA[indexPath.row].status
         cell?.imageview.image = SPORT_DATA[indexPath.row].pic
+        
         return cell!
     }
     

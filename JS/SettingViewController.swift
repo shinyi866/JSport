@@ -16,6 +16,18 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var location: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     
+
+//    @IBAction func pickpic(_ sender: Any) {
+//        let imagePicker = UIImagePickerController()
+//        
+//        if UIImagePickerController.isSourceTypeAvailable(.camera){
+//            imagePicker.sourceType = .camera
+//        }
+//        
+//        imagePicker.delegate = self
+//        present(imagePicker,animated: true,completion: nil)
+//    }
+
     
     //birthday
     let picker = UIDatePicker()

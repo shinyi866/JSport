@@ -8,25 +8,38 @@
 
 import UIKit
 
-class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var selfDescription: UITextField!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var birthday: UITextField!
     @IBOutlet weak var location: UITextField!
     @IBOutlet weak var imageView: UIImageView!
-    
-
-//    @IBAction func pickpic(_ sender: Any) {
-//        let imagePicker = UIImagePickerController()
-//        
-//        if UIImagePickerController.isSourceTypeAvailable(.camera){
-//            imagePicker.sourceType = .camera
-//        }
-//        
-//        imagePicker.delegate = self
-//        present(imagePicker,animated: true,completion: nil)
-//    }
+    @IBAction func finish(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "homeVC")
+        self.present(vc!, animated: true, completion: nil)
+        
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        //info: [String : AnyObject]//傳送者傳遞的資料放這裡
+        print("\(info)")
+        let image = info["UIImagePickerControllerOriginalImage"]
+        imageView.image = image as? UIImage
+        //        var picdata:[UIImage] = []
+        //        picdata.append(image as! UIImage)
+        dismiss(animated: true, completion: nil)
+        
+    }
+    @IBAction func pickpic(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            imagePicker.sourceType = .camera
+        }
+        
+        imagePicker.delegate = self
+        present(imagePicker,animated: true,completion: nil)
+    }
 
     
     //birthday

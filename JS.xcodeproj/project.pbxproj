@@ -22,7 +22,6 @@
 		18C960372029BFFC00475058 /* Notice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C960362029BFFB00475058 /* Notice.storyboard */; };
 		18C960392029CEC200475058 /* Sport1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C960382029CEC200475058 /* Sport1Cell.swift */; };
 		18CB3B0A2027506100F7BF94 /* AddSport1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3B092027506100F7BF94 /* AddSport1.swift */; };
-		521B908C2028637500EFFCBA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 521B908B2028637500EFFCBA /* logo.png */; };
 		52A77CE62029805F006D9BD2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A77CE52029805F006D9BD2 /* SettingViewController.swift */; };
 		52FE21E52026C35A00921D8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21E42026C35A00921D8F /* GoogleService-Info.plist */; };
 		52FE21E72026D8B800921D8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE21E62026D8B800921D8F /* LoginViewController.swift */; };
@@ -31,19 +30,6 @@
 		52FE21ED2026DF4A00921D8F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FE21EC2026DF4900921D8F /* FBSDKCoreKit.framework */; };
 		52FE21EF2026DF5B00921D8F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FE21EE2026DF5A00921D8F /* FBSDKLoginKit.framework */; };
 		52FE21F12026FEE100921D8F /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE21F02026FEE100921D8F /* ResetPasswordViewController.swift */; };
-		52FE21F52028137E00921D8F /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21F42028137D00921D8F /* pic.png */; };
-		52FE21F720281A5A00921D8F /* textbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21F620281A5A00921D8F /* textbar.png */; };
-		52FE21F920282C9C00921D8F /* btn_0_singup.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21F820282C9B00921D8F /* btn_0_singup.png */; };
-		52FE21FB20282DA500921D8F /* btn_0_singin.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21FA20282DA400921D8F /* btn_0_singin.png */; };
-		52FE22022028342A00921D8F /* tb_on_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21FC2028342600921D8F /* tb_on_add.png */; };
-		52FE22032028342A00921D8F /* tb_on_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21FD2028342700921D8F /* tb_on_home.png */; };
-		52FE22042028342A00921D8F /* tb_on_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21FE2028342800921D8F /* tb_on_list.png */; };
-		52FE22052028342A00921D8F /* tb_on_my.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21FF2028342800921D8F /* tb_on_my.png */; };
-		52FE22062028342A00921D8F /* tb_on_talk.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE22002028342800921D8F /* tb_on_talk.png */; };
-		52FE22072028342A00921D8F /* tb_on_ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE22012028342900921D8F /* tb_on_ring.png */; };
-		52FE22092028411A00921D8F /* btn_0_reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE22082028411A00921D8F /* btn_0_reset.png */; };
-		52FE220B2028430400921D8F /* pic_5_op.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE220A2028430400921D8F /* pic_5_op.png */; };
-		52FE220D2028437A00921D8F /* btn_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE220C2028437A00921D8F /* btn_setting.png */; };
 		E5A64C4F773410CE01325B5A /* Pods_JS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82E5C25CDC7F924D16A3436 /* Pods_JS.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +52,6 @@
 		18C960362029BFFB00475058 /* Notice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notice.storyboard; sourceTree = "<group>"; };
 		18C960382029CEC200475058 /* Sport1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport1Cell.swift; sourceTree = "<group>"; };
 		18CB3B092027506100F7BF94 /* AddSport1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSport1.swift; sourceTree = "<group>"; };
-		521B908B2028637500EFFCBA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		52A77CE420295A3D006D9BD2 /* JS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JS.entitlements; sourceTree = "<group>"; };
 		52A77CE52029805F006D9BD2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		52FE21E42026C35A00921D8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -76,19 +61,6 @@
 		52FE21EC2026DF4900921D8F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		52FE21EE2026DF5A00921D8F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		52FE21F02026FEE100921D8F /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		52FE21F42028137D00921D8F /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
-		52FE21F620281A5A00921D8F /* textbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textbar.png; sourceTree = "<group>"; };
-		52FE21F820282C9B00921D8F /* btn_0_singup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_0_singup.png; sourceTree = "<group>"; };
-		52FE21FA20282DA400921D8F /* btn_0_singin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_0_singin.png; sourceTree = "<group>"; };
-		52FE21FC2028342600921D8F /* tb_on_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tb_on_add.png; sourceTree = "<group>"; };
-		52FE21FD2028342700921D8F /* tb_on_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tb_on_home.png; sourceTree = "<group>"; };
-		52FE21FE2028342800921D8F /* tb_on_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tb_on_list.png; sourceTree = "<group>"; };
-		52FE21FF2028342800921D8F /* tb_on_my.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tb_on_my.png; sourceTree = "<group>"; };
-		52FE22002028342800921D8F /* tb_on_talk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tb_on_talk.png; sourceTree = "<group>"; };
-		52FE22012028342900921D8F /* tb_on_ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tb_on_ring.png; sourceTree = "<group>"; };
-		52FE22082028411A00921D8F /* btn_0_reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_0_reset.png; sourceTree = "<group>"; };
-		52FE220A2028430400921D8F /* pic_5_op.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_5_op.png; sourceTree = "<group>"; };
-		52FE220C2028437A00921D8F /* btn_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_setting.png; sourceTree = "<group>"; };
 		D2EF9F149A86813A1CEB142D /* Pods-JS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JS/Pods-JS.debug.xcconfig"; sourceTree = "<group>"; };
 		F82E5C25CDC7F924D16A3436 /* Pods_JS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,20 +123,6 @@
 				1834559D2024E4D400AEE3EB /* MainViewController.swift */,
 				183E1F6E2025A06500BE1B76 /* SportData.swift */,
 				52FE21E42026C35A00921D8F /* GoogleService-Info.plist */,
-				521B908B2028637500EFFCBA /* logo.png */,
-				52FE220C2028437A00921D8F /* btn_setting.png */,
-				52FE21F42028137D00921D8F /* pic.png */,
-				52FE220A2028430400921D8F /* pic_5_op.png */,
-				52FE21F820282C9B00921D8F /* btn_0_singup.png */,
-				52FE21FA20282DA400921D8F /* btn_0_singin.png */,
-				52FE22082028411A00921D8F /* btn_0_reset.png */,
-				52FE21F620281A5A00921D8F /* textbar.png */,
-				52FE21FC2028342600921D8F /* tb_on_add.png */,
-				52FE21FD2028342700921D8F /* tb_on_home.png */,
-				52FE21FE2028342800921D8F /* tb_on_list.png */,
-				52FE21FF2028342800921D8F /* tb_on_my.png */,
-				52FE22012028342900921D8F /* tb_on_ring.png */,
-				52FE22002028342800921D8F /* tb_on_talk.png */,
 				52FE21EE2026DF5A00921D8F /* FBSDKLoginKit.framework */,
 				52FE21EC2026DF4900921D8F /* FBSDKCoreKit.framework */,
 				52FE21EA2026DF2B00921D8F /* Bolts.framework */,
@@ -257,25 +215,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C960372029BFFC00475058 /* Notice.storyboard in Resources */,
-				52FE21F52028137E00921D8F /* pic.png in Resources */,
 				18A91B242024058D00FC7CD3 /* LaunchScreen.storyboard in Resources */,
 				18C960352029BFEF00475058 /* MultipleSelect.storyboard in Resources */,
-				521B908C2028637500EFFCBA /* logo.png in Resources */,
-				52FE220D2028437A00921D8F /* btn_setting.png in Resources */,
 				52FE21E52026C35A00921D8F /* GoogleService-Info.plist in Resources */,
 				18A91B212024058D00FC7CD3 /* Assets.xcassets in Resources */,
-				52FE22092028411A00921D8F /* btn_0_reset.png in Resources */,
-				52FE22062028342A00921D8F /* tb_on_talk.png in Resources */,
-				52FE22022028342A00921D8F /* tb_on_add.png in Resources */,
-				52FE22042028342A00921D8F /* tb_on_list.png in Resources */,
-				52FE22052028342A00921D8F /* tb_on_my.png in Resources */,
-				52FE21F920282C9C00921D8F /* btn_0_singup.png in Resources */,
-				52FE21FB20282DA500921D8F /* btn_0_singin.png in Resources */,
-				52FE22072028342A00921D8F /* tb_on_ring.png in Resources */,
-				52FE22032028342A00921D8F /* tb_on_home.png in Resources */,
-				52FE220B2028430400921D8F /* pic_5_op.png in Resources */,
 				18A91B1F2024058D00FC7CD3 /* Main.storyboard in Resources */,
-				52FE21F720281A5A00921D8F /* textbar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -144,6 +144,8 @@
 				18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */,
 				182B70862024510A00D8CE8D /* AddSport.swift */,
 				1834559D2024E4D400AEE3EB /* MainViewController.swift */,
+				183E1F6E2025A06500BE1B76 /* SportData.swift */,
+				18CB3B092027506100F7BF94 /* AddSport1.swift */,
 				1829C1FA20255B6800E08FF1 /* SportCell.swift */,
 				52FE21E42026C35A00921D8F /* GoogleService-Info.plist */,
 				521B908B2028637500EFFCBA /* logo.png */,
@@ -163,8 +165,6 @@
 				52FE21EE2026DF5A00921D8F /* FBSDKLoginKit.framework */,
 				52FE21EC2026DF4900921D8F /* FBSDKCoreKit.framework */,
 				52FE21EA2026DF2B00921D8F /* Bolts.framework */,
-				183E1F6E2025A06500BE1B76 /* SportData.swift */,
-				18CB3B092027506100F7BF94 /* AddSport1.swift */,
 			);
 			path = JS;
 			sourceTree = "<group>";

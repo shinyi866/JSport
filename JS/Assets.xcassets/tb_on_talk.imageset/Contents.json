@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "tb_on_talk.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "btn_3_on_01.png",
       "scale" : "2x"
     },
     {

@@ -17,43 +17,43 @@ class Tab1ViewController: UIViewController, UITableViewDataSource , UITableViewD
 //        @IBOutlet var timetext: UITextField!
 //        @IBOutlet var numbertext: UITextField!
     
-        @IBOutlet var tableview: UITableView!
-        
-        
-        @IBAction func updateData(_ sender: Any) {
-            
-        }
     
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return SPORT_DATA.count
-        }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cellID = "MyCell"
-            //資源回收桶拿東西
-            //as 轉型 cell:UITableViewCell 改成 CustomCell(Table View)
-            let cell: SportCell! = tableView.dequeueReusableCell(withIdentifier: cellID) as? SportCell
+    @IBOutlet var tableview: UITableView!
+    
+    @IBAction func updateData(_ sender: Any) {
             
-            cell?.label1.text = SPORT_DATA[indexPath.row].location
-            cell?.label2.text = SPORT_DATA[indexPath.row].time
-            cell?.label3.text = String(SPORT_DATA[indexPath.row].dis)
-            cell?.imageview.image = SPORT_DATA[indexPath.row].pic
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return SPORT_DATA.count
+    }
+        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellID = "MyCell2"
+        //資源回收桶拿東西
+        //as 轉型 cell:UITableViewCell 改成 CustomCell(Table View)
+        let cell: SportCell1! = tableView.dequeueReusableCell(withIdentifier: cellID) as? SportCell1
+            
+        cell?.label1.text = SPORT_DATA[indexPath.row].location
+        cell?.label2.text = SPORT_DATA[indexPath.row].time
+        cell?.label3.text = String(SPORT_DATA[indexPath.row].dis)
+        cell?.label4.text = SPORT_DATA[indexPath.row].status
+        cell?.pic.image = SPORT_DATA[indexPath.row].pic
             return cell!
-        }
-        
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
             
-        }
+    }
         
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
             
-        }
-//        override func viewDidAppear(_ animated: Bool) {
-//            tableview.reloadData()
-//        }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        tableview.reloadData()
+    }
 }
 
 

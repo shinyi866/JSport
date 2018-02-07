@@ -28,13 +28,16 @@ class AddSport1: UIViewController , UICollectionViewDataSource , UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(20, 20, 20, 20)
+        return UIEdgeInsetsMake(20, 1, 20, 1)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:Sport1Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GLCell", for: indexPath) as! Sport1Cell
         cell.label.text = data[indexPath.section][indexPath.row].0
-        cell.imageview.image = UIImage(named: images[indexPath.row])
+        
+        //custom cell
+        cell.layer.cornerRadius = 20
+//        cell.imageview.image = UIImage(named: images[indexPath.row])
         
         return cell
     }
@@ -43,11 +46,11 @@ class AddSport1: UIViewController , UICollectionViewDataSource , UICollectionVie
         let cellToDeselect:UICollectionViewCell = LGCell.cellForItem(at: indexPath)!
         
         if data[indexPath.section][indexPath.row].1 {
-            cellToDeselect.contentView.backgroundColor = UIColor.blue  //改btn按鈕取消
+            cellToDeselect.contentView.backgroundColor = UIColor.gray  //改btn按鈕取消
             data[indexPath.section][indexPath.row].1 = false
         }else{
             //btnselect = true
-            cellToDeselect.contentView.backgroundColor = UIColor.darkGray  //改btn按鈕選上
+            cellToDeselect.contentView.backgroundColor = UIColor.orange  //改btn按鈕選上
             data[indexPath.section][indexPath.row].1 = true
         }
         

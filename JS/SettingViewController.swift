@@ -8,8 +8,14 @@
 
 import UIKit
 
-class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate,UICollectionViewDataSource , UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
 
+    /////////////////////////////////////////
+    var data:[[(String,Bool)]] = []
+    var datatest:[String] = []
+    @IBOutlet weak var LGCell: UICollectionView!
+    ///////////////////////////////////////////
+    
     @IBOutlet weak var selfDescription: UITextField!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var birthday: UITextField!
@@ -41,7 +47,6 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         present(imagePicker,animated: true,completion: nil)
     }
 
-    
     //birthday
     let picker = UIDatePicker()
     //date
@@ -78,6 +83,11 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ////////////////////
+        self.data = [["籃球 ","排球 ","棒球 ","壘球 ","足球 ","慢跑 ","羽球 ","健身 ","桌球 ","撞球 ","網球 ","高爾夫球 ","其他球類 ","其他運動 ","不限 "].map({str in return (str,false)})]
+        /////////////////////
+        
+        
         //date
         createDatePicker()
         
@@ -103,8 +113,6 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         location.textAlignment = .center
         location.placeholder = "台北"
         location.setValue(UIColor.black, forKeyPath: "_placeholderLabel.textColor")
-        
-        
     }
     
     //location
@@ -126,13 +134,73 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         location.text = distincts[row]
         location.resignFirstResponder()
     }
-   
-
-
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //////////
+    ////////////
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return self.data.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return self.data[section].count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(20, 1, 20, 1)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell:Sport2Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GLCell1", for: indexPath) as! Sport2Cell
+        cell.cell.text = data[indexPath.section][indexPath.row].0
+        
+        //custom cell
+        cell.layer.cornerRadius = 20
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cellToDeselect:UICollectionViewCell = LGCell.cellForItem(at: indexPath)!
+        
+        if data[indexPath.section][indexPath.row].1 {
+            cellToDeselect.contentView.backgroundColor = UIColor.gray  //改btn按鈕取消
+            data[indexPath.section][indexPath.row].1 = false
+        }else{
+            //btnselect = true
+            cellToDeselect.contentView.backgroundColor = UIColor.orange  //改btn按鈕選上
+            data[indexPath.section][indexPath.row].1 = true
+        }
+        
+        print("select item \(indexPath.row)")
+        datatest.removeAll()  //先將array清空再一次將true放入array
+        for i in 0..<data.count {
+            for j in 0..<data[i].count{
+                if data[i][j].1 == true{
+                    datatest.append(data[i][j].0)
+                }
+            }
+        }
+        
+        print(datatest)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        LGCell.reloadData()
+    }
+    
+//    override func prepare(for segue:UIStoryboardSegue, sender:Any?){
+//
+//        let sportstatus = segue.destination as! AddSport
+//        for i in 0..<datatest.count{
+//            sportstatus.receivestatus.append(datatest[i])
+//        }
+//
+//    }
+    
     
 }

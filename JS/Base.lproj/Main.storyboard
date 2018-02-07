@@ -14,7 +14,7 @@
         <!--Profile-->
         <scene sceneID="SLP-8v-rfJ">
             <objects>
-                <viewController id="Nwn-Iv-HRQ" sceneMemberID="viewController">
+                <viewController id="Nwn-Iv-HRQ" customClass="ProfileViewController" customModule="JS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vef-Te-l72">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYI-zQ-ADi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5201" y="122"/>
+            <point key="canvasLocation" x="-5281" y="105"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="fIO-py-2cl">
@@ -221,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEd-AP-TRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4454" y="122"/>
+            <point key="canvasLocation" x="-4527.1999999999998" y="104.7976011994003"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="HWd-Uy-RIe">
@@ -354,11 +354,50 @@
                                     <action selector="finish:" destination="YGb-Ns-mXy" eventType="touchUpInside" id="2xH-U1-KOH"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hdy-Ck-iqx">
+                                <rect key="frame" x="11" y="524" width="344" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5E1-tp-Cmz">
+                                    <size key="itemSize" width="44" height="29"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GLCell1" id="bJY-NK-eKa" customClass="Sport2Cell" customModule="JS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="29"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0E-gc-hzd">
+                                                    <rect key="frame" x="1" y="4" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="cell" destination="i0E-gc-hzd" id="rGk-rd-OmD"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="YGb-Ns-mXy" id="r6w-7a-Qr1"/>
+                                    <outlet property="delegate" destination="YGb-Ns-mXy" id="MTU-jc-zTZ"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TPr-Ab-ACO"/>
                     </view>
                     <connections>
+                        <outlet property="LGCell" destination="hdy-Ck-iqx" id="m8E-BW-bbw"/>
                         <outlet property="birthday" destination="xNh-YG-khi" id="gnQ-zA-D7P"/>
                         <outlet property="imageView" destination="SGu-BW-8eI" id="SSy-yv-YQp"/>
                         <outlet property="location" destination="WMY-a7-o4m" id="eJz-h1-Yy6"/>
@@ -443,6 +482,10 @@
                                 <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-02-07 下午4.11.35" translatesAutoresizingMaskIntoConstraints="NO" id="Txu-Bm-kM5">
+                                <rect key="frame" x="0.0" y="61" width="375" height="557"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="C3j-tv-Hwu"/>
@@ -451,7 +494,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9mQ-3E-eiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-790" y="126"/>
+            <point key="canvasLocation" x="-791.20000000000005" y="125.4872563718141"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d6f-Gc-hi7">
@@ -478,7 +521,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" id="BYZ-38-t0r" customClass="ViewController" customModule="JS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -583,7 +626,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.95650190114974976" green="0.97543841600418091" blue="0.92613065242767334" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6FE-7L-hsx"/>
                     </view>
                 </viewController>
@@ -669,7 +712,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.92338128799999997" blue="0.59355525870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95650190114974976" green="0.97543841600418091" blue="0.92613065242767334" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gew-Bx-Wqf"/>
                     </view>
                 </viewController>
@@ -710,5 +753,6 @@
         <image name="tb_on_list.png" width="75" height="51"/>
         <image name="tb_on_my.png" width="75" height="51"/>
         <image name="textbar_底圖.png" width="341" height="38"/>
+        <image name="螢幕快照 2018-02-07 下午4.11.35" width="377" height="552"/>
     </resources>
 </document>

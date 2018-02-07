@@ -15,7 +15,7 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
     
     let locationManger = CLLocationManager()
     var currentloc = Location()
-    var countdis:Int = 0
+    var countdis:Double = 0.0
     var receivestatus:[String] = []
     
 //    @IBAction func Back(segue: UIStoryboardSegue){
@@ -26,6 +26,7 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
     
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet var imageview: UIImageView!
+    @IBOutlet var txt: UITextField!
     @IBOutlet var locationField: UITextField!
     @IBOutlet var timeField: UITextField!
     @IBOutlet var kindField: UITextField!
@@ -52,23 +53,23 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         if locationField.text == "NTNU"{
             coordinaiton.latitude = currentloc.NTNU_lat
             coordinaiton.longitude = currentloc.NTNU_lng
-            countdis = Int(CountDistance(lat: currentloc.NTNU_lat, lng: currentloc.NTNU_lng))
+            countdis = CountDistance(lat: currentloc.NTNU_lat, lng: currentloc.NTNU_lng)
         }else if locationField.text == "NTU"{
             coordinaiton.latitude = currentloc.NTU_lat
             coordinaiton.longitude = currentloc.NTU_lng
-            countdis = Int(CountDistance(lat: currentloc.NTU_lat, lng: currentloc.NTU_lng))
+            countdis = CountDistance(lat: currentloc.NTU_lat, lng: currentloc.NTU_lng)
         }else if locationField.text == "NTUT"{
             coordinaiton.latitude = currentloc.NTUT_lat
             coordinaiton.longitude = currentloc.NTUT_lng
-            countdis = Int(CountDistance(lat: currentloc.NTUT_lat, lng: currentloc.NTUT_lng))
+            countdis = CountDistance(lat: currentloc.NTUT_lat, lng: currentloc.NTUT_lng)
         }else if locationField.text == "NTUA"{
             coordinaiton.latitude = currentloc.NTUA_lat
             coordinaiton.longitude = currentloc.NTUA_lng
-            countdis = Int(CountDistance(lat: currentloc.NTUA_lat, lng: currentloc.NTUA_lng))
+            countdis = CountDistance(lat: currentloc.NTUA_lat, lng: currentloc.NTUA_lng)
         }else if locationField.text == "UT"{
             coordinaiton.latitude = currentloc.UT_lat
             coordinaiton.longitude = currentloc.UT_lng
-            countdis = Int(CountDistance(lat: currentloc.UT_lat, lng: currentloc.UT_lng))
+            countdis = CountDistance(lat: currentloc.UT_lat, lng: currentloc.UT_lng)
         }else{}
         if map.isHidden == true{
             map.isHidden = false
@@ -102,15 +103,11 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         for i in 0..<receivestatus.count{
             statusdata.append(receivestatus[i])
         }
-        let sportdata = SportData(location:locationField.text! , time:timeField.text! , dis: countdis, pic:imageview.image!, status:statusdata)
+        let sportdata = SportData(location:locationField.text! , time:timeField.text! , dis: String(format:"%.2f",countdis), pic:imageview.image!, status:statusdata, txt: txt.text!, join: false)
         //把值傳進SPORT_DATA
         SPORT_DATA.insert(sportdata, at: 0)
         SPORT_DATA.sort(by: { (dis1: SportData, dis2: SportData) -> Bool in return dis1.dis < dis2.dis })
         
-        //        let sportdata = SportData(location:locationField.text! , time:timeField.text! , dis: countdis, pic:imageview.image!)
-        //            //把值傳進SPORT_DATA
-        //        SPORT_DATA.insert(sportdata, at: 0)
-        //        SPORT_DATA.sort(by: { (dis1: SportData, dis2: SportData) -> Bool in return dis1.dis < dis2.dis })
         locationField.text = ""
         timeField.text = ""
         //imageview = nil
@@ -127,23 +124,23 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         if locationField.text == "NTNU"{
             coordinaiton.latitude = currentloc.NTNU_lat
             coordinaiton.longitude = currentloc.NTNU_lng
-            countdis = Int(CountDistance(lat: currentloc.NTNU_lat, lng: currentloc.NTNU_lng))
+            countdis = CountDistance(lat: currentloc.NTNU_lat, lng: currentloc.NTNU_lng)
         }else if locationField.text == "NTU"{
             coordinaiton.latitude = currentloc.NTU_lat
             coordinaiton.longitude = currentloc.NTU_lng
-            countdis = Int(CountDistance(lat: currentloc.NTU_lat, lng: currentloc.NTU_lng))
+            countdis = CountDistance(lat: currentloc.NTU_lat, lng: currentloc.NTU_lng)
         }else if locationField.text == "NTUT"{
             coordinaiton.latitude = currentloc.NTUT_lat
             coordinaiton.longitude = currentloc.NTUT_lng
-            countdis = Int(CountDistance(lat: currentloc.NTUT_lat, lng: currentloc.NTUT_lng))
+            countdis = CountDistance(lat: currentloc.NTUT_lat, lng: currentloc.NTUT_lng)
         }else if locationField.text == "NTUA"{
             coordinaiton.latitude = currentloc.NTUA_lat
             coordinaiton.longitude = currentloc.NTUA_lng
-            countdis = Int(CountDistance(lat: currentloc.NTUA_lat, lng: currentloc.NTUA_lng))
+            countdis = CountDistance(lat: currentloc.NTUA_lat, lng: currentloc.NTUA_lng)
         }else if locationField.text == "UT"{
             coordinaiton.latitude = currentloc.UT_lat
             coordinaiton.longitude = currentloc.UT_lng
-            countdis = Int(CountDistance(lat: currentloc.UT_lat, lng: currentloc.UT_lng))
+            countdis = CountDistance(lat: currentloc.UT_lat, lng: currentloc.UT_lng)
         }else{}
         
     }

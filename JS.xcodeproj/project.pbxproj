@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1829C1FB20255B6800E08FF1 /* SportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829C1FA20255B6800E08FF1 /* SportCell.swift */; };
 		182B70872024510A00D8CE8D /* AddSport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B70862024510A00D8CE8D /* AddSport.swift */; };
+		1832F4B9202B1B8600DBB06E /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832F4B8202B1B8600DBB06E /* Information.swift */; };
 		1834559E2024E4D400AEE3EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834559D2024E4D400AEE3EB /* MainViewController.swift */; };
 		183E1F6F2025A06500BE1B76 /* SportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E1F6E2025A06500BE1B76 /* SportData.swift */; };
 		18A91B1A2024058D00FC7CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B192024058D00FC7CD3 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 		12D5271B274A3BA997CEF013 /* Pods-JS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JS/Pods-JS.release.xcconfig"; sourceTree = "<group>"; };
 		1829C1FA20255B6800E08FF1 /* SportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCell.swift; sourceTree = "<group>"; };
 		182B70862024510A00D8CE8D /* AddSport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSport.swift; sourceTree = "<group>"; };
+		1832F4B8202B1B8600DBB06E /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		1834559D2024E4D400AEE3EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		183E1F6E2025A06500BE1B76 /* SportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportData.swift; sourceTree = "<group>"; };
 		18A91B162024058D00FC7CD3 /* JS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,11 +133,12 @@
 				18C9603A2029E78200475058 /* Notice.swift */,
 				18B4B44C202A310F00B5B56D /* Noticetest.swift */,
 				18B4B44E202AEEA900B5B56D /* NoticeCell.swift */,
+				1834559D2024E4D400AEE3EB /* MainViewController.swift */,
 				182B70862024510A00D8CE8D /* AddSport.swift */,
 				18CB3B092027506100F7BF94 /* AddSport1.swift */,
+				1832F4B8202B1B8600DBB06E /* Information.swift */,
 				18C960382029CEC200475058 /* Sport1Cell.swift */,
 				1829C1FA20255B6800E08FF1 /* SportCell.swift */,
-				1834559D2024E4D400AEE3EB /* MainViewController.swift */,
 				183E1F6E2025A06500BE1B76 /* SportData.swift */,
 				52FE21E42026C35A00921D8F /* GoogleService-Info.plist */,
 				52FE21EE2026DF5A00921D8F /* FBSDKLoginKit.framework */,
@@ -331,6 +334,7 @@
 				18A91B1A2024058D00FC7CD3 /* AppDelegate.swift in Sources */,
 				18B4B44D202A310F00B5B56D /* Noticetest.swift in Sources */,
 				18A91B2E2024073700FC7CD3 /* Tab2ViewController.swift in Sources */,
+				1832F4B9202B1B8600DBB06E /* Information.swift in Sources */,
 				52FE21E72026D8B800921D8F /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,7 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JS/JS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4H7Z24DFP3;
+				DEVELOPMENT_TEAM = 2VAN8HC229;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JS",
@@ -492,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JS/JS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4H7Z24DFP3;
+				DEVELOPMENT_TEAM = 2VAN8HC229;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JS",

@@ -14,16 +14,20 @@ class SportData {
     var location: String
     var time: String
     var status: String
-    var dis: Int
+    var dis: String
     var pic: UIImage
+    var txt: String
+    var join: Bool
     
     
-    init(location: String , time: String , dis:Int, pic: UIImage,status:String){
+    init(location: String , time: String , dis:String, pic: UIImage,status:String,txt:String,join:Bool){
         self.location = location
         self.time = time
         self.dis = dis
         self.pic = pic
         self.status = status
+        self.txt = txt
+        self.join = join
     }
     
 }

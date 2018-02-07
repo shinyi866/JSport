@@ -9,17 +9,8 @@
 import UIKit
 
 class MainViewController: UIViewController , UITableViewDataSource , UITableViewDelegate {
-    
 //    var locdata: [String] = []
-//    var timedata:[String] = []
-    
-    
-//    @IBOutlet var loctext: UITextField!
-//    @IBOutlet var timetext: UITextField!
-//    @IBOutlet var numbertext: UITextField!
-//    @IBAction func updateData(_ sender: Any) {
-//
-//    }
+    var timedata:[String] = ["1","2","3"]
 
     @IBOutlet var tableview: UITableView!
     
@@ -46,10 +37,18 @@ class MainViewController: UIViewController , UITableViewDataSource , UITableView
         return cell!
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let info: Information = storyboard?.instantiateViewController(withIdentifier: "Information") as! Information
+        info.location1 = SPORT_DATA[indexPath.row].location
+        print(info.location1)
+        
+        navigationController?.pushViewController(info, animated: true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableview.delegate = self
+        tableview.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {

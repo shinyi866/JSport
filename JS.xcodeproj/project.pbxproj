@@ -24,6 +24,8 @@
 		18C9603B2029E78200475058 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9603A2029E78200475058 /* Notice.swift */; };
 		18CB3B0A2027506100F7BF94 /* AddSport1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3B092027506100F7BF94 /* AddSport1.swift */; };
 		52A77CE62029805F006D9BD2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A77CE52029805F006D9BD2 /* SettingViewController.swift */; };
+		52A77CEC202AD8A6006D9BD2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A77CEB202AD8A6006D9BD2 /* ProfileViewController.swift */; };
+		52A77CEE202B039D006D9BD2 /* Sport2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A77CED202B039D006D9BD2 /* Sport2Cell.swift */; };
 		52FE21E52026C35A00921D8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52FE21E42026C35A00921D8F /* GoogleService-Info.plist */; };
 		52FE21E72026D8B800921D8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE21E62026D8B800921D8F /* LoginViewController.swift */; };
 		52FE21E92026DBB100921D8F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE21E82026DBB100921D8F /* CreateAccountViewController.swift */; };
@@ -56,6 +58,8 @@
 		18CB3B092027506100F7BF94 /* AddSport1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSport1.swift; sourceTree = "<group>"; };
 		52A77CE420295A3D006D9BD2 /* JS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JS.entitlements; sourceTree = "<group>"; };
 		52A77CE52029805F006D9BD2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		52A77CEB202AD8A6006D9BD2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		52A77CED202B039D006D9BD2 /* Sport2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport2Cell.swift; sourceTree = "<group>"; };
 		52FE21E42026C35A00921D8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52FE21E62026D8B800921D8F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		52FE21E82026DBB100921D8F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				18A91B192024058D00FC7CD3 /* AppDelegate.swift */,
 				18A91B1B2024058D00FC7CD3 /* ViewController.swift */,
 				18A91B1D2024058D00FC7CD3 /* Main.storyboard */,
+				52A77CED202B039D006D9BD2 /* Sport2Cell.swift */,
+				52A77CEB202AD8A6006D9BD2 /* ProfileViewController.swift */,
 				52A77CE52029805F006D9BD2 /* SettingViewController.swift */,
 				52FE21F02026FEE100921D8F /* ResetPasswordViewController.swift */,
 				52FE21E62026D8B800921D8F /* LoginViewController.swift */,
@@ -304,9 +310,11 @@
 				18C9603B2029E78200475058 /* Notice.swift in Sources */,
 				18C960392029CEC200475058 /* Sport1Cell.swift in Sources */,
 				182B70872024510A00D8CE8D /* AddSport.swift in Sources */,
+				52A77CEE202B039D006D9BD2 /* Sport2Cell.swift in Sources */,
 				18A91B2C2024071600FC7CD3 /* Tab1ViewController.swift in Sources */,
 				52FE21F12026FEE100921D8F /* ResetPasswordViewController.swift in Sources */,
 				52A77CE62029805F006D9BD2 /* SettingViewController.swift in Sources */,
+				52A77CEC202AD8A6006D9BD2 /* ProfileViewController.swift in Sources */,
 				52FE21E92026DBB100921D8F /* CreateAccountViewController.swift in Sources */,
 				1829C1FB20255B6800E08FF1 /* SportCell.swift in Sources */,
 				18A91B1C2024058D00FC7CD3 /* ViewController.swift in Sources */,

@@ -18,8 +18,8 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
     var countdis:Int = 0
     var receivestatus:[String] = []
     
-    @IBAction func Back(segue: UIStoryboardSegue){
-    }
+//    @IBAction func Back(segue: UIStoryboardSegue){
+//    }
     
     
     @IBOutlet var map: MKMapView!

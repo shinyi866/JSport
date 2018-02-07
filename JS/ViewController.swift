@@ -49,7 +49,9 @@ class ViewController: UIViewController , UIPageViewControllerDataSource , UIPage
     private var pageController: UIPageViewController!
     private var arrVC:[UIViewController] = []
     private var currentPage: Int!
-    
+    @IBAction func backto (segue: UIStoryboardSegue){
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }

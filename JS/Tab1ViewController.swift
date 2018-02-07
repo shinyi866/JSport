@@ -51,22 +51,8 @@ class Tab1ViewController: UIViewController, UITableViewDataSource , UITableViewD
             super.didReceiveMemoryWarning()
             
         }
-        
-//        //增加動態就改變資料
 //        override func viewDidAppear(_ animated: Bool) {
-//            //將reveiveData_loc從Any?轉成String
-//            //        if let reveiveData_loc = UserDefaults.standard.object(forKey:KEY_LOCATION) as? String {
-//            //            SportData.locdata.insert(reveiveData_loc, at: 0)
-//            //            //刪除資料
-//            //            UserDefaults.standard.removeObject(forKey: KEY_LOCATION)
-//            //        }
-//            //        if let receiveData_ball = UserDefaults.standard.object(forKey:KEY_TIME) as? String {
-//            //            SportData.timedata.insert(receiveData_ball, at: 0)
-//            //            UserDefaults.standard.removeObject(forKey: KEY_LOCATION)
-//            //        }
-//            
 //            tableview.reloadData()
-//            
 //        }
 }
 

@@ -17,13 +17,16 @@ class MainViewController: UIViewController , UITableViewDataSource , UITableView
 //    @IBOutlet var loctext: UITextField!
 //    @IBOutlet var timetext: UITextField!
 //    @IBOutlet var numbertext: UITextField!
-    
+//    @IBAction func updateData(_ sender: Any) {
+//
+//    }
+
     @IBOutlet var tableview: UITableView!
     
-    
-    @IBAction func updateData(_ sender: Any) {
-        
+    @IBAction func finish(_ sender: Any) {
+
     }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return SPORT_DATA.count
     }

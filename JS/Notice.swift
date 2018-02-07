@@ -9,8 +9,36 @@
 import UIKit
 import Firebase
 
-class Notice: UIViewController {
+class Notice: UIViewController , UITableViewDataSource , UITableViewDelegate{
     
+    //var receivejoin: SportDatatest?
+    @IBOutlet var noticetable: UITableView!
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return SPORT_DATAtest.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellID = "NoticeCell1"
+        let cell: NoticeCell? = tableView.dequeueReusableCell(withIdentifier: cellID) as? NoticeCell
+        
+        if SPORT_DATAtest[indexPath.row].join == true{
+        
+        cell?.label1.text = SPORT_DATAtest[indexPath.row].location
+        cell?.label2.text = SPORT_DATAtest[indexPath.row].time
+            
+        }else{
+            cell?.label1.text = ""
+            cell?.label2.text = ""
+        }
+        
+        return cell!
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.noticetable.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,5 +50,7 @@ class Notice: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
     
 }

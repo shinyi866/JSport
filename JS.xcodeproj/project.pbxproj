@@ -18,6 +18,8 @@
 		18A91B242024058D00FC7CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A91B222024058D00FC7CD3 /* LaunchScreen.storyboard */; };
 		18A91B2C2024071600FC7CD3 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */; };
 		18A91B2E2024073700FC7CD3 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */; };
+		18B4B44D202A310F00B5B56D /* Noticetest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B44C202A310F00B5B56D /* Noticetest.swift */; };
+		18B4B44F202AEEA900B5B56D /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B44E202AEEA900B5B56D /* NoticeCell.swift */; };
 		18C960352029BFEF00475058 /* MultipleSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C960342029BFEF00475058 /* MultipleSelect.storyboard */; };
 		18C960372029BFFC00475058 /* Notice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C960362029BFFB00475058 /* Notice.storyboard */; };
 		18C960392029CEC200475058 /* Sport1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C960382029CEC200475058 /* Sport1Cell.swift */; };
@@ -49,6 +51,8 @@
 		18A91B252024058D00FC7CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		18B4B44C202A310F00B5B56D /* Noticetest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noticetest.swift; sourceTree = "<group>"; };
+		18B4B44E202AEEA900B5B56D /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
 		18C960342029BFEF00475058 /* MultipleSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MultipleSelect.storyboard; sourceTree = "<group>"; };
 		18C960362029BFFB00475058 /* Notice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notice.storyboard; sourceTree = "<group>"; };
 		18C960382029CEC200475058 /* Sport1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport1Cell.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				18A91B2B2024071600FC7CD3 /* Tab1ViewController.swift */,
 				18A91B2D2024073700FC7CD3 /* Tab2ViewController.swift */,
 				18C9603A2029E78200475058 /* Notice.swift */,
+				18B4B44C202A310F00B5B56D /* Noticetest.swift */,
+				18B4B44E202AEEA900B5B56D /* NoticeCell.swift */,
 				182B70862024510A00D8CE8D /* AddSport.swift */,
 				18CB3B092027506100F7BF94 /* AddSport1.swift */,
 				18C960382029CEC200475058 /* Sport1Cell.swift */,
@@ -313,7 +319,9 @@
 				18CB3B0A2027506100F7BF94 /* AddSport1.swift in Sources */,
 				183E1F6F2025A06500BE1B76 /* SportData.swift in Sources */,
 				1834559E2024E4D400AEE3EB /* MainViewController.swift in Sources */,
+				18B4B44F202AEEA900B5B56D /* NoticeCell.swift in Sources */,
 				18A91B1A2024058D00FC7CD3 /* AppDelegate.swift in Sources */,
+				18B4B44D202A310F00B5B56D /* Noticetest.swift in Sources */,
 				18A91B2E2024073700FC7CD3 /* Tab2ViewController.swift in Sources */,
 				52FE21E72026D8B800921D8F /* LoginViewController.swift in Sources */,
 			);

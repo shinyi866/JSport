@@ -61,3 +61,38 @@ func CountDistance(lat: Double , lng: Double) -> Double {
 
 
 //let x = SportData(location: "xxx", time: "yyy")
+class SportDatatest {
+    
+    var location: String
+    var time: String
+    var join:Bool = false
+    
+    
+    init(location: String , time: String, join:Bool){
+        self.location = location
+        self.time = time
+        self.join = join
+    }
+    
+}
+
+//class Check: SportDatatest {
+//
+//    override var join:Bool {
+//        get{
+//            return super.join
+//        }
+//
+//        set{
+//            super.join = false
+//        }
+//    }
+//}
+
+var SPORT_DATAtest: [SportDatatest] = []
+
+
+
+
+
+

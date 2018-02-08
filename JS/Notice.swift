@@ -23,7 +23,7 @@ class Notice: UIViewController , UITableViewDataSource , UITableViewDelegate{
         let cell: NoticeCell? = tableView.dequeueReusableCell(withIdentifier: cellID) as? NoticeCell
         
         if SPORT_DATA[indexPath.row].join == true{
-        
+        print("yo")
         cell?.label1.text = SPORT_DATA[indexPath.row].location
         cell?.label2.text = SPORT_DATA[indexPath.row].time
             

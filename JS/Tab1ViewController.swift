@@ -29,7 +29,7 @@ class Tab1ViewController: UIViewController, UITableViewDataSource , UITableViewD
     }
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellID = "MyCell2"
+        let cellID = "Cell"
         //資源回收桶拿東西
         //as 轉型 cell:UITableViewCell 改成 CustomCell(Table View)
         let cell: SportCell1! = tableView.dequeueReusableCell(withIdentifier: cellID) as? SportCell1
@@ -44,7 +44,8 @@ class Tab1ViewController: UIViewController, UITableViewDataSource , UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            
+        tableview.delegate = self
+        tableview.dataSource = self
     }
         
     override func didReceiveMemoryWarning() {

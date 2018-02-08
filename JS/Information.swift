@@ -27,6 +27,7 @@ class Information: UIViewController {
     
     @IBAction func join(_ sender: Any) {
         infojoin = true
+        print(infojoin)
     }
 
     override func viewDidLoad() {
@@ -36,6 +37,7 @@ class Information: UIViewController {
         status.text = infostatus
         txt.text = infotxt
         imageview.image = infopic
+        print(infojoin)
     }
 
     override func didReceiveMemoryWarning() {

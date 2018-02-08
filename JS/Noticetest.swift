@@ -10,7 +10,7 @@ import UIKit
 
 class Noticetest: UIViewController {
     
-    var data1:SportDatatest!
+    var data1:SportData!
     var noticejoin:Bool = false
     
     @IBOutlet var input1: UITextField!
@@ -18,17 +18,10 @@ class Noticetest: UIViewController {
     @IBOutlet var output1: UILabel!
     @IBOutlet var output2: UILabel!
     
-    @IBOutlet var input3: UITextField!
-    @IBOutlet var input4: UITextField!
-    @IBOutlet var output3: UILabel!
-    @IBOutlet var output4: UILabel!
-    
-
-    
     @IBAction func join(_ sender: Any) {
-        data1 = SportDatatest(location:input1.text!,time:input2.text!,join:false)
+//        data1 = SportData(location:input1.text!,time:input2.text!,join:false)
         
-        SPORT_DATAtest.insert(data1, at: 0)
+        SPORT_DATA.insert(data1, at: 0)
         
         input1.text = ""
         input2.text = ""

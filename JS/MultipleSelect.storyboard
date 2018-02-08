@@ -361,10 +361,10 @@
             </objects>
             <point key="canvasLocation" x="1504.8" y="896.40179910044981"/>
         </scene>
-        <!--Information-->
+        <!--View Controller-->
         <scene sceneID="Qif-3S-x7W">
             <objects>
-                <viewController storyboardIdentifier="Information" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I6M-Zk-X8O" customClass="Information" customModule="JS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="I6M-Zk-X8O" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F85-rn-d1J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -409,7 +409,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="join:" destination="I6M-Zk-X8O" eventType="touchUpInside" id="jlt-Bz-f3d"/>
                                     <segue destination="4Sm-Js-ra3" kind="unwind" unwindAction="MainWithSegue:" id="MVN-hG-4N0"/>
                                 </connections>
                             </button>
@@ -417,13 +416,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="wgq-8L-np4"/>
                     </view>
-                    <connections>
-                        <outlet property="imageview" destination="a7O-qv-tfv" id="cmz-j3-52x"/>
-                        <outlet property="location" destination="qPE-LJ-J45" id="xgv-D0-Sn1"/>
-                        <outlet property="status" destination="1d2-yh-lbU" id="7Bo-9k-358"/>
-                        <outlet property="time" destination="dUU-hH-CyI" id="JO3-mP-eyp"/>
-                        <outlet property="txt" destination="xYv-c5-FYm" id="prn-ZU-QMy"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oN5-5K-vIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4Sm-Js-ra3" userLabel="Exit" sceneMemberID="exit"/>

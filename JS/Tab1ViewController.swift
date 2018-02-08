@@ -42,6 +42,20 @@ class Tab1ViewController: UIViewController, UITableViewDataSource , UITableViewD
             return cell!
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detial = storyboard?.instantiateViewController(withIdentifier: "Information") as! Information
+        detial.infolocation = SPORT_DATA[indexPath.row].location
+        detial.infotime = SPORT_DATA[indexPath.row].time
+        detial.infostatus = SPORT_DATA[indexPath.row].status
+        detial.infopic = SPORT_DATA[indexPath.row].pic
+        detial.infotxt = SPORT_DATA[indexPath.row].txt
+        detial.infojoin = SPORT_DATA[indexPath.row].join
+        
+        print(detial.infojoin)
+        navigationController?.pushViewController(detial, animated: true)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.delegate = self

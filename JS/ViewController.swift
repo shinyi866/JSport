@@ -22,6 +22,9 @@ class ViewController: UIViewController , UIPageViewControllerDataSource , UIPage
 //        table.reloadData()
 //    }
     
+    @IBAction func Main(segue: UIStoryboardSegue){
+
+    }
     
     @IBOutlet var btnTab1: UIButton!
     @IBOutlet var btnTab2: UIButton!

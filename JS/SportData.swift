@@ -60,7 +60,7 @@ let loc = Location()
 
 func CountDistance(lat: Double , lng: Double) -> Double {
     let dis_squ:Double = (loc.UT_lat - lat) * (loc.UT_lat - lat) + (loc.UT_lng - lng) * (loc.UT_lng - lng)
-    return sqrt(dis_squ) * 1000
+    return sqrt(dis_squ) * 100
 }
 
 

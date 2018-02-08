@@ -103,15 +103,15 @@ class AddSport: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         for i in 0..<receivestatus.count{
             statusdata.append(receivestatus[i])
         }
-        let sportdata = SportData(location:locationField.text! , time:timeField.text! , dis: String(format:"%.2f",countdis), pic:imageview.image!, status:statusdata, txt: txt.text!, join: false)
+        let sportdata = SportData(location:locationField.text! , time:timeField.text! , dis: String(format:"%.1f",countdis), pic:imageview.image!, status:statusdata, txt: txt.text!, join: false)
         //把值傳進SPORT_DATA
         SPORT_DATA.insert(sportdata, at: 0)
         SPORT_DATA.sort(by: { (dis1: SportData, dis2: SportData) -> Bool in return dis1.dis < dis2.dis })
         
         locationField.text = ""
         timeField.text = ""
-        //imageview = nil
-        distantshow.text = String(countdis)
+        txt.text = ""
+        distantshow.text = String(format:"%.1f",countdis)
         print(SPORT_DATA)
         
     }

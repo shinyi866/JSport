@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController , UITableViewDataSource , UITableViewDelegate {
 //    var locdata: [String] = []
-    var timedata:[String] = ["1","2","3"]
+    var timedata = ["1","2","3"]
 
     @IBOutlet var tableview: UITableView!
     
@@ -38,12 +38,19 @@ class MainViewController: UIViewController , UITableViewDataSource , UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let info: Information = storyboard?.instantiateViewController(withIdentifier: "Information") as! Information
-        info.location1 = SPORT_DATA[indexPath.row].location
-        print(info.location1)
+        let detial = storyboard?.instantiateViewController(withIdentifier: "Information") as! Information        
+        detial.infolocation = SPORT_DATA[indexPath.row].location
+        detial.infotime = SPORT_DATA[indexPath.row].time
+        detial.infostatus = SPORT_DATA[indexPath.row].status
+        detial.infopic = SPORT_DATA[indexPath.row].pic
+        detial.infotxt = SPORT_DATA[indexPath.row].txt
+        detial.infojoin = SPORT_DATA[indexPath.row].join
         
-        navigationController?.pushViewController(info, animated: true)
+        print(detial)
+        navigationController?.pushViewController(detial, animated: true)
+        
     }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

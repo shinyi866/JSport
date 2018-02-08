@@ -11,7 +11,13 @@ import Foundation
 
 class Information: UIViewController {
     
-    var location1:String?
+    var infolocation:String?
+    var infotime:String?
+    var infostatus: String?
+    var infodis: String?
+    var infopic: UIImage?
+    var infotxt: String?
+    var infojoin: Bool?
     
     @IBOutlet var imageview: UIImageView!
     @IBOutlet var time: UILabel!
@@ -20,15 +26,16 @@ class Information: UIViewController {
     @IBOutlet var txt: UILabel!
     
     @IBAction func join(_ sender: Any) {
-        print(location1)
+        infojoin = true
     }
-//    override func viewDidAppear(_ animated: Bool) {
-//        location.text = location1
-//    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        location.text = location1
-        
+        location.text = infolocation
+        time.text = infotime
+        status.text = infostatus
+        txt.text = infotxt
+        imageview.image = infopic
     }
 
     override func didReceiveMemoryWarning() {

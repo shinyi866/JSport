@@ -33,7 +33,7 @@ class Tab1ViewController: UIViewController, UITableViewDataSource , UITableViewD
         //資源回收桶拿東西
         //as 轉型 cell:UITableViewCell 改成 CustomCell(Table View)
         let cell: SportCell1! = tableView.dequeueReusableCell(withIdentifier: cellID) as? SportCell1
-            
+        
         cell?.label1.text = SPORT_DATA[indexPath.row].location
         cell?.label2.text = SPORT_DATA[indexPath.row].time
         cell?.label3.text = String(SPORT_DATA[indexPath.row].dis)

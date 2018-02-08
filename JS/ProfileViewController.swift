@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let a:Int = 0
 
         // Do any additional setup after loading the view.
     }

@@ -262,7 +262,7 @@
         <!--Main View Controller-->
         <scene sceneID="fDF-Op-iol">
             <objects>
-                <viewController id="wYM-x2-d1w" customClass="MainViewController" customModule="JS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="MainCV" storyboardIdentifier="MainCV" id="wYM-x2-d1w" customClass="MainViewController" customModule="JS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U47-rr-NqE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
